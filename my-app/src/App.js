@@ -36,7 +36,7 @@ let [show, setSHow] = useState()
 <h1>{inCart ? "В корзине" : "Не в корзине"}</h1>
 {show}
 <button onClick={ban}>Забанить пользователя</button>
-<h1>струя</h1>
+
 <Inputs />
 
     </div>
