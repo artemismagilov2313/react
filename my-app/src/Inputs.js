@@ -1,7 +1,7 @@
 import { useState } from "react"
 
 function Inputs(){
- 
+    localStorage.setItem('key',"Alex")
     let [value1, setValue1] = useState(0)
     let [value2, setValue2] = useState (0)
 	const [value, setValue] = useState('');
@@ -15,7 +15,7 @@ function Inputs(){
 	}
     return(
         <div>
-        
+        <h1>{localStorage.getItem("key")}</h1>
            <input type="number" value={value1} onChange={event=>setValue1(event.target.value)}/>
            <input type="number" value={value2} onChange={event=>setValue2(event.target.value)}/>
 <br />

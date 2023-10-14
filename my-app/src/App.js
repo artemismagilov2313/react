@@ -3,6 +3,7 @@ import Inputs from "./Inputs"
 import './App.css';
 
 function App() {
+ 
 
   let [inCart, setInCart] = useState(false)
   let [stateUser, setStateUser] = useState(true)
@@ -38,6 +39,8 @@ let [show, setSHow] = useState()
 <button onClick={ban}>Забанить пользователя</button>
 
 <Inputs />
+
+<input type="text" placeholder={localStorage.getItem("key")}/>
 
     </div>
   );
