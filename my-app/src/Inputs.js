@@ -11,14 +11,14 @@ function Inputs(){
         window.location.reload()
       }
       function handleChange(event) {
-		setValue(event.target.value);
+		setValue(evnt.target.value);
 	}
     return(
         <div>
         <h1>{localStorage.getItem("key")}</h1>
            <input type="number" value={value1} onChange={event=>setValue1(event.target.value)}/>
            <input type="number" value={value2} onChange={event=>setValue2(event.target.value)}/>
-<br />
+<br />n
             <button onClick={()=> setResaultPlus(event=>Number(value1) + Number(value2))}>+</button>
             <button onClick={()=> setResaultMinus(event=>Number(value1) - Number(value2))}>-</button>
             <p>Результат сложения: {resaultPlus}</p>
